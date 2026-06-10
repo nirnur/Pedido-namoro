@@ -11,3 +11,17 @@ botao.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+const naoBtn = document.getElementById("naoBtn");
+const mensagemNao = document.getElementById("mensagemNao");
+
+naoBtn.addEventListener("click", () => {
+    mensagemNao.style.display = "block";
+});
+naoBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+
+    naoBtn.style.position = "fixed";
+    naoBtn.style.left = `${x}px`;
+    naoBtn.style.top = `${y}px`;
+});
