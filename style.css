@@ -134,3 +134,43 @@ h1,h2{
         transform:translateY(0);
     }
 }
+.botoes-pedido{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:30px;
+    margin-top:30px;
+}
+
+.botao-sim{
+    border:none;
+    padding:30px 60px;
+    font-size:1.8rem;
+    border-radius:50px;
+    cursor:pointer;
+    background:white;
+    color:#ff4f85;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.botao-sim:hover{
+    transform:scale(1.08);
+}
+
+.botao-nao{
+    border:none;
+    padding:8px 10px;
+    font-size:0.9rem;
+    border-radius:10px;
+    cursor:pointer;
+    background:rgba(255,255,255,.4);
+    color:#888;
+    opacity:1;
+    transition:.3s;
+}
+
+.botao-nao:hover{
+    opacity:1;
+}
